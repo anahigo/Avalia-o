@@ -2,7 +2,6 @@
 /**
  * Validadores de Formulários - Semantic UI
  */
-require('../functions/formPivotSend');
 require('../functions/formPivotValidation');
 require('../functions/formPivot');
 require('../vendors/validators');
