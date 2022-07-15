@@ -56,6 +56,13 @@ $(document).ready(function (){
                     }
                 ]
             },
-        }
+        },
     })
+    $("#submitPivot").on("click", function(e) {
+        e.preventDefault();
+        if($('.ui.form.pivot').form('is valid')) {
+            var dataPivot = $(".ui.form.pivot").form("get values");
+            sessionStorage.setItem('dataPivot', JSON.stringify(dataPivot))
+        };
+    });
 });
